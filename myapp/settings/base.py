@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myapp.home',
-    'myapp.user'
+    'myapp.user',
+    'django_calendar'
 ]
 
 MIDDLEWARE = [
