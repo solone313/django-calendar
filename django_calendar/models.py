@@ -10,6 +10,9 @@ class Schedule(models.Model):
     end_date_time = models.DateTimeField()
     is_all_day = models.BooleanField()
 
+    
+    def __str__(self):
+        return self.title
 
 class Invitation(models.Model):
     name = models.CharField(max_length=30)
