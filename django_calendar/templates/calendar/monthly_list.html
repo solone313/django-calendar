@@ -6,13 +6,13 @@
     <div class="calendar-header">
         <button class="btn btn-light">Today</button>
         <div class="ico-arrow">
-            <a href="{% url 'schedule:monthly' today|convert_pre_year today|convert_pre_month today.2 %}"
+            <a href="{% url 'django_calendar:monthly' today|convert_pre_year today|convert_pre_month today.2 %}"
                data-toggle="tooltip" data-placement="top" title="이전">
                 <i class="material-icons">
                     chevron_left
                 </i>
             </a>
-            <a href="{% url 'schedule:monthly' today|convert_next_year today|convert_next_month today.2 %}"
+            <a href="{% url 'django_calendar:monthly' today|convert_next_year today|convert_next_month today.2 %}"
                data-toggle="tooltip" data-placement="top" title="다음">
                 <i class="material-icons">
                     chevron_right
