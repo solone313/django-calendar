@@ -9,7 +9,7 @@ class Schedule(models.Model):
     start_date_time = models.DateTimeField()
     end_date_time = models.DateTimeField()
     is_all_day = models.BooleanField()
-
+    is_repeated = models.BooleanField(default=False)
     
     def __str__(self):
         return self.title
